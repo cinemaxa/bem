@@ -8,86 +8,71 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- -----------------------------шапка----------------------- -->
       <header class="header">
         <div class="header__container">
-          <a href="#" class="header__logo logo">
-            <img src="img/logo.svg" alt="logo" class="logo" />
+          <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="logo" class="header__logo-img" />
           </a>
           <nav class="header__menu menu">
-            <ul class="menu__item">
-              <li>
+            <ul class="menu__list">
+              <li class="menu__item">
                 <a href="#" class="menu__link">Contacts</a>
               </li>
-              <li>
+              <li class="menu__item">
                 <a href="#" class="menu__link">Blog</a>
               </li>
-              <li>
+              <li class="menu__item">
                 <a href="#" class="menu__link">Events</a>
               </li>
-              <li>
+              <li class="menu__item">
                 <a href="#" class="menu__link">Courses</a>
               </li>
-              <li>
+              <li class="menu__item">
                 <a href="#" class="menu__link">About Us</a>
               </li>
             </ul>
           </nav>
-          <div class="header__button">
-            <div class="btn btn_orange">
-              <a href="#" class="btn__link">Get consultation</a>
-            </div>
-          </div>
-          <div class="account">
-            <!-- картинку человечка я бы вставила псевдоэлементом -->
-            <ul class="account__list">
-              <li class="account__item">
-                <a href="#" class="account__link">
-                  <img
-                    src="img/Vector45.svg"
-                    alt="log_in"
-                    class="account__img"
-                  />
-                </a>
-              </li>
-              <li class="account__item">
-                <a href="#" class="account__link">Log in </a>
-              </li>
-              <li class="account__item">
-                <a href="#" class="account__link">Register</a>
-              </li>
-            </ul>
+          <div class="header__buttons">
+            <a href="#" class="header__button">Get consultation</a>
+            <a href="#" class="header__button header__button_no-border">
+              Log in / Register
+            </a>
           </div>
         </div>
       </header>
-      <main>
-        <div class="container container_start">
-          <div class="start">
-            <div class="start__play-video">
-              <div class="btn btn_round">
-                <a href="#" class="btn__link"></a>
+      <!-- -----------------основное содержание--------------------- -->
+      <main class="page">
+        <!-- ========================= Заглавная страница ================================== -->
+        <div class="page__main-block main-block">
+          <div class="main-block__container">
+            <div class="main-block__body">
+              <div class="main-block__play">
+                <div class="btn btn_round">
+                  <a href="#" class="btn__link"></a>
+                </div>
+                <h2 class="subtitle-h2">Play showreel</h2>
               </div>
-              <h2 class="subtitle-h2">Play showreel</h2>
+              <h1 class="main-block__title">
+                Enjoy studying with Createx Online Courses
+              </h1>
+              <div class="main-block__buttons">
+                <div class="btn btn_outline">
+                  <a href="#" class="btn__link">About us</a>
+                </div>
+                <div class="btn btn_orange">
+                  <a href="#" class="btn__link">Explore courses</a>
+                </div>
+              </div>
             </div>
-            <h1 class="start__title">
-              Enjoy studying with Createx Online Courses
-            </h1>
-            <div class="start__buttons">
-              <div class="btn btn_outline">
-                <a href="#" class="btn__link">About us</a>
-              </div>
-              <div class="btn btn_orange">
-                <a href="#" class="btn__link">Explore courses</a>
-              </div>
-            </div>
-            <div class="start__img">
+            <div class="main-block__img">
               <img
                 src="img/illustration.svg"
                 alt="иллюстрация"
                 class="illustration"
               />
             </div>
-            <div class="start__scroll statistics">
-              <!-- кажется точки можно вставить и псевдоэлементом -->
+            <div class="main-block__statistics statistics">
               <ul class="statistics__list">
                 <li class="statistics__item">
                   <span class="statistics__number">1200</span>Students graduated
@@ -126,36 +111,40 @@
             </div>
           </div>
         </div>
-        <div class="container container_who-we-are">
-          <div class="who-we-are">
+
+        <!-- =============================== Блок Why we are ============================== -->
+
+        <div class="page__who-we-are who-we-are">
+          <div class="who-we-are__container">
             <div class="who-we-are__img">
               <img src="img/image.jpg" alt="main_photo" />
             </div>
+
             <div class="who-we-are__content">
               <div class="who-we-are__block-header block-header">
-                <div class="block-header">
+                <div class="block-header__cont">
                   <div class="block-header__sub-title">Who we are</div>
                   <h2 class="block-header__title">Why Createx?</h2>
                 </div>
               </div>
-              <ul class="who-we-are_list list">
-                <li class="list__item">
+              <ul class="who-we-are_list">
+                <li class="who-we-are__item">
                   A fermentum in morbi pretium aliquam adipiscing donec tempus.
                 </li>
-                <li class="list__item">
+                <li class="who-we-are__item">
                   Vulputate placerat amet pulvinar lorem nisl.
                 </li>
-                <li class="list__item">
+                <li class="who-we-are__item">
                   Consequat feugiat habitant gravida quisque elit bibendum id
                   adipiscing sed.
                 </li>
-                <li class="list__item">
+                <li class="who-we-are__item">
                   Etiam duis lobortis in fames ultrices commodo nibh.
                 </li>
-                <li class="list__item">
+                <li class="who-we-are__item">
                   Tincidunt sagittis neque sem ac eget.
                 </li>
-                <li class="list__item">
+                <li class="who-we-are__item">
                   Ultricies amet justo et eget quisque purus vulputate dapibus
                   tortor.
                 </li>
@@ -166,39 +155,44 @@
             </div>
           </div>
         </div>
-        <div class="container container_courses">
-          <div class="courses">
-            <div class="courses__block-header block-header">
-              <div class="block-header">
-                <div class="block-header__sub-title">Ready to learn&</div>
-                <h2 class="block-header__title">Featured Courses</h2>
+
+        <!-- =============================== Блок courses ============================== -->
+
+        <div class="page__courses courses">
+          <div class="courses__container">
+            <div class="courses__header">
+              <div class="courses__block-header block-header">
+                <div class="block-header__cont">
+                  <div class="block-header__sub-title">Ready to learn&</div>
+                  <h2 class="block-header__title">Featured Courses</h2>
+                </div>
+              </div>
+              <div class="courses__button">
+                <div class="btn btn_outline">
+                  <a href="#" class="btn__link">View all courses</a>
+                </div>
               </div>
             </div>
-            <div class="courses__button">
-              <div class="btn btn_outline">
-                <a href="#" class="btn__link">View all courses</a>
-              </div>
-            </div>
-            <div class="courses__course-cards">
+
+            <div class="courses__cards">
               <div class="card">
                 <img
                   src="img/image1.jpg"
                   alt="фото_преподавателя"
                   class="card__img"
                 />
+
                 <div class="card__content">
-                  <ul class="card__list">
-                    <li class="card__specialty">Marketing</li>
-                    <li class="card__name-course">
-                      The Ultimate Google Ads Training Course
-                    </li>
-                    <li class="card__info">
-                      <ul class="card__info__list">
-                        <li class="card__info__price">$100</li>
-                        <li class="card__info__author">by Jerome Bell</li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div class="card__specialty">Marketing</div>
+                  <h3 class="card__name-course">
+                    The Ultimate Google Ads Training Course
+                  </h3>
+                  <div class="card__info">
+                    <ul class="card__list">
+                      <li class="card__price">$100</li>
+                      <li class="card__author">by Jerome Bell</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -207,19 +201,18 @@
                   alt="фото_преподавателя"
                   class="card__img"
                 />
+
                 <div class="card__content">
-                  <ul class="card__list">
-                    <li class="card__specialty">Marketing</li>
-                    <li class="card__name-course">
-                      The Ultimate Google Ads Training Course
-                    </li>
-                    <li class="card__info">
-                      <ul class="card__info__list">
-                        <li class="card__info__price">$100</li>
-                        <li class="card__info__author">by Jerome Bell</li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div class="card__specialty">Marketing</div>
+                  <h3 class="card__name-course">
+                    The Ultimate Google Ads Training Course
+                  </h3>
+                  <div class="card__info">
+                    <ul class="card__list">
+                      <li class="card__price">$100</li>
+                      <li class="card__author">by Jerome Bell</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -228,19 +221,18 @@
                   alt="фото_преподавателя"
                   class="card__img"
                 />
+
                 <div class="card__content">
-                  <ul class="card__list">
-                    <li class="card__specialty">Marketing</li>
-                    <li class="card__name-course">
-                      The Ultimate Google Ads Training Course
-                    </li>
-                    <li class="card__info">
-                      <ul class="card__info__list">
-                        <li class="card__info__price">$100</li>
-                        <li class="card__info__author">by Jerome Bell</li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div class="card__specialty">Marketing</div>
+                  <h3 class="card__name-course">
+                    The Ultimate Google Ads Training Course
+                  </h3>
+                  <div class="card__info">
+                    <ul class="card__list">
+                      <li class="card__price">$100</li>
+                      <li class="card__author">by Jerome Bell</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -249,19 +241,18 @@
                   alt="фото_преподавателя"
                   class="card__img"
                 />
+
                 <div class="card__content">
-                  <ul class="card__list">
-                    <li class="card__specialty">Marketing</li>
-                    <li class="card__name-course">
-                      The Ultimate Google Ads Training Course
-                    </li>
-                    <li class="card__info">
-                      <ul class="card__info__list">
-                        <li class="card__info__price">$100</li>
-                        <li class="card__info__author">by Jerome Bell</li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div class="card__specialty">Marketing</div>
+                  <h3 class="card__name-course">
+                    The Ultimate Google Ads Training Course
+                  </h3>
+                  <div class="card__info">
+                    <ul class="card__list">
+                      <li class="card__price">$100</li>
+                      <li class="card__author">by Jerome Bell</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -270,19 +261,18 @@
                   alt="фото_преподавателя"
                   class="card__img"
                 />
+
                 <div class="card__content">
-                  <ul class="card__list">
-                    <li class="card__specialty">Marketing</li>
-                    <li class="card__name-course">
-                      The Ultimate Google Ads Training Course
-                    </li>
-                    <li class="card__info">
-                      <ul class="card__info__list">
-                        <li class="card__info__price">$100</li>
-                        <li class="card__info__author">by Jerome Bell</li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div class="card__specialty">Marketing</div>
+                  <h3 class="card__name-course">
+                    The Ultimate Google Ads Training Course
+                  </h3>
+                  <div class="card__info">
+                    <ul class="card__list">
+                      <li class="card__price">$100</li>
+                      <li class="card__author">by Jerome Bell</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -291,54 +281,49 @@
                   alt="фото_преподавателя"
                   class="card__img"
                 />
+
                 <div class="card__content">
-                  <ul class="card__list">
-                    <li class="card__specialty">Marketing</li>
-                    <li class="card__name-course">
-                      The Ultimate Google Ads Training Course
-                    </li>
-                    <li class="card__info">
-                      <ul class="card__info__list">
-                        <li class="card__info__price">$100</li>
-                        <li class="card__info__author">by Jerome Bell</li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div class="card__specialty">Marketing</div>
+                  <h3 class="card__name-course">
+                    The Ultimate Google Ads Training Course
+                  </h3>
+                  <div class="card__info">
+                    <ul class="card__list">
+                      <li class="card__price">$100</li>
+                      <li class="card__author">by Jerome Bell</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container container_benefits">
-          <div class="benefits">
+
+        <!-- =============================== Блок benefits ============================== -->
+
+        <div class="page__benefits benefits">
+          <div class="benefits__container">
             <div class="benefits__block-header block-header">
-              <div class="block-header">
+              <div class="block-header__cont">
                 <div class="block-header__sub-title">Our benefits</div>
                 <h2 class="block-header__title">That’s how we do it</h2>
               </div>
             </div>
-            <ul class="benefits__list">
-              <li class="benefits__item benefits__item_active">
-                <div class="btn btn_outline">
-                  <a href="#" class="btn__link">Experienced Tutors</a>
-                </div>
-              </li>
-              <li class="benefits__item">
-                <div class="btn btn_outline-no-active">
-                  <a href="#" class="btn__link">Feedback & Support</a>
-                </div>
-              </li>
-              <li class="benefits__item">
-                <div class="btn btn_outline-no-active">
-                  <a href="#" class="btn__link">24/7 Online Library</a>
-                </div>
-              </li>
-              <li class="benefits__item">
-                <div class="btn btn_outline-no-active">
-                  <a href="#" class="btn__link">Community</a>
-                </div>
-              </li>
-            </ul>
+            <div class="benefits__button-block">
+              <div class="btn btn_outline">
+                <a href="#" class="btn__link">Experienced Tutors</a>
+              </div>
+              <div class="btn btn_outline-no-active">
+                <a href="#" class="btn__link">Feedback & Support</a>
+              </div>
+              <div class="btn btn_outline-no-active">
+                <a href="#" class="btn__link">24/7 Online Library</a>
+              </div>
+              <div class="btn btn_outline-no-active">
+                <a href="#" class="btn__link">Community</a>
+              </div>
+            </div>
+
             <div class="benefits__content">
               <h2 class="benefits__tutors">Only practicing tutors</h2>
               <p>
@@ -358,10 +343,12 @@
             </div>
           </div>
         </div>
-        <div class="container container_events">
-          <div class="events">
+        <!-- =============================== Блок events ============================== -->
+
+        <div class="page__events events">
+          <div class="events__container">
             <div class="events__block-header block-header">
-              <div class="block-header">
+              <div class="block-header__cont">
                 <div class="block-header__sub-title">Our Events</div>
                 <h2 class="block-header__title">Lectures & workshops</h2>
               </div>
@@ -439,26 +426,25 @@
             </div>
           </div>
         </div>
-        <div class="container container_certificate">
-          <div class="certificate">
+        <!-- =============================== Блок certificate ============================== -->
+        <div class="page__certificate certificate">
+          <div class="certificate__container">
             <div class="certificate__content">
               <div class="certificate__block-header block-header">
-                <div class="block-header">
+                <div class="block-header__cont">
                   <div class="block-header__sub-title">Createx Certificate</div>
                   <h2 class="block-header__title">
                     Your expertise will be confirmed
                   </h2>
                 </div>
               </div>
-              <div class="certificate__text text">
+              <div class="certificate__text">
                 <p>
-                  Createx Online School is a leader in online studying. We have
-                  lots of courses and programs from the main market experts.
-                  We provide relevant approaches to online learning, internships
-                  and employment in the largest companies in the country.
+                  We are accredited by international professional organizations
+                  and institutes:
                 </p>
               </div>
-              <div class="logo">
+              <div class="certificate__logo logo">
                 <ul class="logo__list">
                   <li class="logo__item">
                     <img src="img/logo1.svg" alt="" class="logo__img" />
@@ -477,10 +463,13 @@
             </div>
           </div>
         </div>
-        <div class="container container__team">
-          <div class="team">
+
+        <!-- =============================== Блок team ============================== -->
+
+        <div class="page__team team">
+          <div class="team__container">
             <div class="team__block-header block-header">
-              <div class="block-header">
+              <div class="block-header__cont">
                 <div class="block-header__sub-title">
                   Best tutors are all here
                 </div>
@@ -494,16 +483,16 @@
                 </a>
               </div>
               <div class="slider-right">
-                <a href="#" class="slider-right__link link_hover">
+                <a href="#" class="slider-right__link slider-right__hover">
                   <img src="img/hover.svg" alt="активная стрелка вправо" />
                 </a>
               </div>
             </div>
             <div class="team-cards">
-              <div class="member member__hover">
+              <div class="member member_hover">
                 <img src="img/member.png" alt="участник" />
                 <!-- ссылки на социалки п\появляются при ховере -->
-                <ul class="social member__socials">
+                <ul class="member__socials social">
                   <li class="social__item">
                     <a href="#" class="social__link">
                       <img src="img/Vector.svg" alt="Ln" class="social__img" />
@@ -557,11 +546,11 @@
             </div>
           </div>
         </div>
-
-        <div class="container container_testimonials">
-          <div class="testimonials">
+        <!-- =============================== Блок testimonials ============================== -->
+        <div class="page__testimonials testimonials">
+          <div class="testimonials__container">
             <div class="testimonials__block-header block-header">
-              <div class="block-header">
+              <div class="block-header__cont">
                 <div class="block-header__sub-title">TESTIMONIALS</div>
                 <h2 class="block-header__title">What our students say</h2>
               </div>
@@ -572,7 +561,7 @@
               </a>
             </div>
             <div class="testimonials__card">
-              <div class="text testimonials__text">
+              <div class="testimonials__text">
                 <p>
                   Createx Online School is a leader in online studying. We have
                   lots of courses and programs from the main market experts.
@@ -580,22 +569,22 @@
                   and employment in the largest companies in the country.
                 </p>
               </div>
-              <div class="profile">
-                <img src="img/ava.jpg" alt="аватар" class="profile__img" />
-                <h4 class="profile__name">Eleanor Pena</h4>
+              <div class="testimonials__profile">
+                <img src="img/ava.jpg" alt="аватар" class="testimonials__img" />
+                <h4 class="testimonials__name">Eleanor Pena</h4>
                 <p>Position, Course</p>
               </div>
             </div>
 
-            <div class="slider-right">
-              <a href="#" class="slider-right__link link_hover">
+            <div class="slider-right slider-right_hover">
+              <a href="#" class="slider-right__link">
                 <img src="img/hover.svg" alt="активная стрелка вправо" />
               </a>
             </div>
-            <div class="dots">
+            <div class="testimonials__dots dots">
               <ul class="dots__list">
                 <li class="dots__item">
-                  <a href="#" class="dots__link dots__link-hover"></a>
+                  <a href="#" class="dots__link dots__link_hover"></a>
                 </li>
                 <li class="dots__item">
                   <a href="#" class="dots__link"></a>
@@ -613,245 +602,268 @@
             </div>
           </div>
         </div>
-
-        <div class="container container_blog">
-          <div class="blog">
-            <div class="block-header blog__header">
-              <div class="block-header__sub-title">Our blog</div>
-              <h2 class="block-header__title">Latest posts</h2>
+        <!-- =============================== Блок blog ============================== -->
+        <div class="page__blog blog">
+          <div class="blog__container">
+            <div class="blog__block-header block-header">
+              <div class="block-header__cont">
+                <div class="block-header__sub-title">Our blog</div>
+                <h2 class="block-header__title">Latest posts</h2>
+              </div>
             </div>
             <div class="blog__button">
               <div class="btn btn_orange">
                 <a href="#" class="btn__link">Go to blog</a>
               </div>
             </div>
-            <div class="blog__content">
-              <img src="img/blog1.jpg" alt="rimg" />
-              <ul class="theme">
-                <li class="item-theme">тема</li>
-                <li class="item-date">дата</li>
-                <li class="item-time">время контента</li>
-              </ul>
-              <h4 class="blog__title">
-                What is traffic arbitrage and does it really make money?
-              </h4>
-              <p>
-                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
-                Convallis proin dignissim lacus, purus gravida...
-              </p>
-              <div class="farther">
-                <a href="#" class="farther__link">
-                  Listen
-                  <img
-                    src="img/org_line.svg"
-                    alt="стрелка"
-                    class="farther__img"
-                  />
-                </a>
+            <div class="blog__body">
+              <div class="blog__card">
+                <img src="img/blog1.jpg" alt="rimg" />
+                <div class="blog__content">
+                  <ul class="blog__theme">
+                    <li class="blog__item">тема</li>
+                    <li class="blog__item">дата</li>
+                    <li class="blog__item">время контента</li>
+                  </ul>
+                  <h4 class="blog__title">
+                    What is traffic arbitrage and does it really make money?
+                  </h4>
+                  <p class="blog__text">
+                    Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                    Convallis proin dignissim lacus, purus gravida...
+                  </p>
+                  <div class="blog__next next">
+                    <a href="#" class="next__link">
+                      Listen
+                      <img
+                        src="img/org_line.svg"
+                        alt="стрелка"
+                        class="next__img"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="blog__content">
-              <img src="img/blog2.jpg" alt="rimg" />
-              <ul class="theme">
-                <li class="item-theme">тема</li>
-                <li class="item-date">дата</li>
-                <li class="item-time">время контента</li>
-              </ul>
-              <h4 class="blog__title">
-                What is traffic arbitrage and does it really make money?
-              </h4>
-              <p>
-                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
-                Convallis proin dignissim lacus, purus gravida...
-              </p>
-              <div class="farther">
-                <a href="#" class="farther__link">
-                  Listen
-                  <img
-                    src="img/org_line.svg"
-                    alt="стрелка"
-                    class="farther__img"
-                  />
-                </a>
+              <div class="blog__card">
+                <img src="img/blog2.jpg" alt="rimg" />
+                <div class="blog__content">
+                  <ul class="blog__theme">
+                    <li class="blog__item">тема</li>
+                    <li class="blog__item">дата</li>
+                    <li class="blog__item">время контента</li>
+                  </ul>
+                  <h4 class="blog__title">
+                    What is traffic arbitrage and does it really make money?
+                  </h4>
+                  <p class="blog__text">
+                    Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                    Convallis proin dignissim lacus, purus gravida...
+                  </p>
+                  <div class="blog__next next">
+                    <a href="#" class="next__link">
+                      Listen
+                      <img
+                        src="img/org_line.svg"
+                        alt="стрелка"
+                        class="next__img"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="blog__content">
-              <img src="img/blog3.jpg" alt="rimg" />
-              <ul class="theme">
-                <li class="item-theme">тема</li>
-                <li class="item-date">дата</li>
-                <li class="item-time">время контента</li>
-              </ul>
-              <h4 class="blog__title">
-                What is traffic arbitrage and does it really make money?
-              </h4>
-              <p>
-                Pharetra, ullamcorper iaculis viverra parturient sed id sed.
-                Convallis proin dignissim lacus, purus gravida...
-              </p>
-              <div class="farther">
-                <a href="#" class="farther__link">
-                  Listen
-                  <img
-                    src="img/org_line.svg"
-                    alt="стрелка"
-                    class="farther__img"
-                  />
-                </a>
+              <div class="blog__card">
+                <div class="blog__content">
+                  <img src="img/blog3.jpg" alt="rimg" />
+                  <ul class="blog__theme">
+                    <li class="blog__item">тема</li>
+                    <li class="blog__item">дата</li>
+                    <li class="blog__item">время контента</li>
+                  </ul>
+                  <h4 class="blog__title">
+                    What is traffic arbitrage and does it really make money?
+                  </h4>
+                  <p class="blog__text">
+                    Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                    Convallis proin dignissim lacus, purus gravida...
+                  </p>
+                  <div class="blog__next next">
+                    <a href="#" class="next__link">
+                      Listen
+                      <img
+                        src="img/org_line.svg"
+                        alt="стрелка"
+                        class="next__img"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container container_subscribe">
-          <div class="subscribe">
-            <div class="block-header subscribe__header">
-              <div class="block-header__sub-title">Don’t miss anything</div>
-              <h2 class="block-header__title">
-                Subscribe to the Createx School announcements
-              </h2>
+        <!-- =============================== Блок subscribe============================== -->
+        <div class="page__subscribe subscribe">
+          <div class="subscribe__container">
+            <div class="subscribe__header block-header">
+              <div class="block-header__cont">
+                <div class="block-header__sub-title">Don’t miss anything</div>
+                <h2 class="block-header__title">
+                  Subscribe to the Createx School announcements
+                </h2>
+              </div>
             </div>
-            <div class="form">форма для отправки email</div>
+            <div class="subscribe__form form">форма для отправки email</div>
             <div class="btn btn_orange">
               <a href="#" class="btn__link">Subscribe</a>
             </div>
           </div>
         </div>
       </main>
+      <!-- ----------------------------подвал----------------------- -->
       <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__about-createx">
-            <a href="#" class="logo footer__logo">
-              <img src="img/logo.svg" alt="logo" />
-            </a>
-            <div class="footer__text">
-              <p>
-                Createx Online School is a leader in online studying. We have
-                lots of courses and programs from the main market experts.
-                We provide relevant approaches to online learning, internships
-                and employment in the largest companies in the country.
-              </p>
-            </div>
+        <!--общая информация -->
+        <div class="footer__about-createx about-createx">
+          <div class="about-createx__container">
+            <div class="about-createx__information">
+              <a href="#" class="about-createx__logo">
+                <img src="img/logo.svg" alt="logo" />
+              </a>
+              <div class="about-createx__text">
+                <p>
+                  Createx Online School is a leader in online studying. We have
+                  lots of courses and programs from the main market experts.
+                  We provide relevant approaches to online learning, internships
+                  and employment in the largest companies in the country.
+                </p>
+              </div>
 
-            <ul class="footer__social social">
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="img/fb.svg" alt="fb" class="social__img" />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="img/Twitter.svg" alt="tw" class="social__img" />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img
-                    src="img/youtube.svg"
-                    alt="youtube"
-                    class="social__img"
-                  />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img
-                    src="img/telegram.svg"
-                    alt="telega"
-                    class="social__img"
-                  />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="img/Instagram.svg" alt="inst" class="social__img" />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img
-                    src="img/Vector.svg"
-                    alt="linked-in"
-                    class="social__img"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__map">
-            <h3 class="subtitle-h3 subtitle-h3_white">SITE MAP</h3>
-            <div class="footer__menu menu">
-              <ul class="menu__item">
-                <li>
-                  <a href="#" class="menu__link">About Us</a>
+              <ul class="about-createx__social social">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img src="img/fb.svg" alt="fb" class="social__img" />
+                  </a>
                 </li>
-                <li>
-                  <a href="#" class="menu__link">Courses</a>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img src="img/Twitter.svg" alt="tw" class="social__img" />
+                  </a>
                 </li>
-                <li>
-                  <a href="#" class="menu__link">Events</a>
+                <li class="social__item social_hover">
+                  <a href="#" class="social__link">
+                    <img
+                      src="img/youtube.svg"
+                      alt="youtube"
+                      class="social__img"
+                    />
+                  </a>
                 </li>
-                <li>
-                  <a href="#" class="menu__link">Events</a>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img
+                      src="img/telegram.svg"
+                      alt="telega"
+                      class="social__img"
+                    />
+                  </a>
                 </li>
-                <li>
-                  <a href="#" class="menu__link">Events</a>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img
+                      src="img/Instagram.svg"
+                      alt="inst"
+                      class="social__img"
+                    />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img
+                      src="img/Vector.svg"
+                      alt="linked-in"
+                      class="social__img"
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="footer__courses">
-            <h3 class="subtitle-h3 subtitle-h3_white">COURSES</h3>
-            <div class="footer__menu menu">
-              <ul class="menu__item">
-                <li>
-                  <a href="#" class="menu__link">Marketing</a>
-                </li>
-                <li>
-                  <a href="#" class="menu__link">Management</a>
-                </li>
-                <li>
-                  <a href="#" class="menu__link">HR & Recruting</a>
-                </li>
-                <li>
-                  <a href="#" class="menu__link">Design</a>
-                </li>
-                <li>
-                  <a href="#" class="menu__link">Development</a>
-                </li>
-              </ul>
+            <div class="about-createx__map">
+              <h3 class="subtitle-h3 subtitle-h3_white">SITE MAP</h3>
+              <div class="about-createx__menu menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">About Us</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Courses</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Events</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Events</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Events</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="footer__contact">
-            <h3 class="subtitle-h3 subtitle-h3_white">CONTACT US</h3>
-            <div class="footer__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">(405) 555-0128</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">hello@createx.com</a>
-                </li>
-              </ul>
+            <div class="about-createx__courses">
+              <h3 class="subtitle-h3 subtitle-h3_white">COURSES</h3>
+              <div class="about-createx__menu menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Marketing</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Management</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">HR & Recruting</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Design</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Development</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="footer__newsletter">
-            <h3 class="subtitle-h3 subtitle-h3_white">
-              SIGN UP TO OUR NEWSLETTER
-            </h3>
-            <div class="menu menu-footer">
-              <div class="form">форма для отправки email</div>
-              <div class="text text_subscribe">
+            <div class="about-createx__contact">
+              <h3 class="subtitle-h3 subtitle-h3_white">CONTACT US</h3>
+              <div class="about-createx__menu menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">(405) 555-0128</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">hello@createx.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-createx__newsletter">
+              <h3 class="subtitle-h3 subtitle-h3_white">
+                SIGN UP TO OUR NEWSLETTER
+              </h3>
+
+              <div class="about-createx__form">форма для отправки email</div>
+              <div class="about-createx__subscribe">
                 *Subscribe to our newsletter to receive communications and early
                 updates from Createx SEO Agency.
               </div>
             </div>
           </div>
         </div>
+        <!-- копирайт -->
         <div class="footer__copyright copyright">
-          <div class="copyright__text">
-            <p>© All rights reserved.Made with love by Createx Studio</p>
+          <div class="copyright__container">
+            <div class="copyright__text">
+              <p>© All rights reserved.Made with love by Createx Studio</p>
+            </div>
+            <div class="copyright__link"><a href="#">GO TO TOP</a></div>
           </div>
-          <div class="copyright__link"><a href="#">GO TO TOP</a></div>
         </div>
       </footer>
     </div>
